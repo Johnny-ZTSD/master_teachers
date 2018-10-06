@@ -20,6 +20,14 @@ public class ResultUtil {
         return success(null);
     }
 
+    public static  Result successAndJustSetMessage(String message){
+        Result result = new Result();
+        result.setCode(ResultCode.SUCCESS);
+        result.setMessage(message);
+        result.setData(null);
+        return result;
+    }
+
     public static Result error(ResultCode code, String msg) {
         Result result = new Result();
         result.setCode(code);
