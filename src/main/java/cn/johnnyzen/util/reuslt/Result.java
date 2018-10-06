@@ -1,4 +1,6 @@
-package cn.johnnyzen.util.reuslt;
+package com.johnnyzen.util.reuslt;
+
+import cn.johnnyzen.util.reuslt.ResultCode;
 
 /**
  * @IDE: Created by IntelliJ IDEA.
@@ -9,7 +11,15 @@ package cn.johnnyzen.util.reuslt;
 
 public class Result {
     private int code = -1;
+    /*
+     * 对code解释
+     * 阅读对象：程序员
+     * */
     private String message = null;
+    /*
+     * 返回object或者提示数据
+     * 阅读对象：用户
+     **/
     private Object data = null;
 
     public Result() {
